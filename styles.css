@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: franklin Gothic Medum;
+    font-weight: 500px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+        
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+img{
+    width: 40vh;
+    height: 20px;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+    transition: 0.2s;
+    font-size: larger;
+    font-weight: 600;
+
+}
+li a:hover{
+    color: white;
+    
+}
+
+.content{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content h1{
+    display: flex;
+    justify-content: center;
+    font-size: 160px;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    cursor: default;
+}
+
+.content a{
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size:20px;
+    background: #ffffff69;
+    color: rgb(255, 251, 246);
+    padding: 12px;
+    border-radius: 80px;
+    transition: 0.2s;
+  
+}
+.content a:hover{
+    background-color: transparent;
+    color: rgb(255, 106, 0);
+}
+
+.vid{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* footer logo */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+
+footer ul li{
+    padding: 20px;
+}
+.social-icons a{
+    color: white;
+    border: 2px solid #ffffff50;
+    padding: 5px;
+    background-color: #ffffff50;
+    border-radius: 50%;
+}
+.social-icons a:hover{
+    color: rgb(255, 106, 0);
+    border: 2px solid rgb(255, 106, 0);
+}
+
+
+/* Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .content h1{
+        font-size: 120px;
+    }
+
+    nav {
+        height: 75px;
+        font-size: small;
+    }
+
+    li a {
+        font-size: 25px;
+    }
+    
+    .logo{
+        width: 10px;
+        height: 10px;
+    }
+
+    .content a{
+        margin-top: 0px;
+    }
+
+    ul{
+        height: 15px;
+    }
+
+    .social-icons{
+        margin-top: -345px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    .content h1{
+        font-size: 90px;
+        
+    }
+    .content{
+        margin-top: 40px;
+    }
+
+    .social-icons{
+        margin-top: -322px;
+        
+    }
+    .social-icons a{
+        padding: 2px;
+        border-radius: 50%;
+    }
+    .vid{
+        
+    }
+
+}
+/* Desktop */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 160px;
+    }
+
+    nav {
+        height: 150px;
+    }
+
+    li a {
+        font-size: 30px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    li a {
+        font-size: 20px;
+    }
+}
+
+
+
